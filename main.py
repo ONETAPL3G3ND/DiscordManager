@@ -31,7 +31,11 @@ async def set_auto_text(ctx):
 async def sh(ctx):
     await Bot.Sh(ctx)
 
+@bot.command()
+async def stop(ctx):
+    await Bot.Stop(ctx)
+
 
 
 if __name__ == "__main__":
-    bot.run('token', bot = False)
+    bot.run('token', bot=False)
